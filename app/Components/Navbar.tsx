@@ -36,9 +36,9 @@ export const Navbar = () => {
             </div>
 
             <div onClick={handleToggle} className="md:hidden absolute right-14 top-5 border rounded  text-white/70 border-white/70 p-2 z-50">
-                {isOpen ? <AiOutlineClose size={50} /> : <AiOutlineMenu size={50} />}
+                {isOpen ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
             </div>
-            <div className={`fixed top-0 right-0 w-1/4 h-full bg-black/90 backdrop-blur-lg p-4 transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"} md:hidden`}>
+            <div className={`fixed top-0 right-0 w-1/3 h-full bg-black/90 backdrop-blur-lg p-4 transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"} md:hidden`}>
                 <ul className="flex flex-col items-center justify-center h-full space-y-8">
                     {navLinks.map((link, index) => (
                         <li key={index} className="text-gray-800 hover:text-gray-600 transition duration-300">

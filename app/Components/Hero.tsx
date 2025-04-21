@@ -1,6 +1,9 @@
 "use client";
 import { use, useEffect, useState } from "react";
 import { useMotionValue, animate, useMotionTemplate, motion } from "framer-motion";
+import Image from "next/image";
+import Profile from "../../app/assets/profile.jpg";
+
 const colors_top = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C" ]
 
 export const Hero = () => {
@@ -33,7 +36,20 @@ export const Hero = () => {
                 <h1 className="mt-4 text-5xl font-bold leading-tight text-center max-sm:text-3xl">
                     Emamul Arefin Islam 
                 </h1>
+                <Image
+                        src={Profile}
+                        alt="profile"
+                        width={300}
+                        className="rounded-full object-center mt-8 border-2 border-white/20 shadow-lg shadow-gray-900/50"
+                         
+                    />
 
+            </div>
+
+            <div className="bg-cicle-container">
+
+                <div className="bg-circle-background"></div>
+                <div className="bg-circle"></div>
             </div>
             
         </motion.section>

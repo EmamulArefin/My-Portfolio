@@ -2,17 +2,18 @@ import { AiFillGithub, AiOutlineTwitter, AiFillFacebook, AiFillInstagram } from 
 import { FaTelegramPlane } from 'react-icons/fa';
 
 const socialLinks = [
-  { href: "https://github.com", Icon: AiFillGithub, label: "GitHub" },
-  { href: "https://x.com", Icon: AiOutlineTwitter, label: "X (Twitter)" },
-  { href: "https://facebook.com", Icon: AiFillFacebook, label: "Facebook" },
-  { href: "https://instagram.com", Icon: AiFillInstagram, label: "Instagram" },
-  { href: "https://telegram.org", Icon: FaTelegramPlane, label: "Telegram" }
+  { href: "https://github.com/EmamulArefin", Icon: AiFillGithub, label: "GitHub" },
+  //{ href: "https://x.com", Icon: AiOutlineTwitter, label: "X (Twitter)" },
+  { href: "https://facebook.com/emamul.arfin.56", Icon: AiFillFacebook, label: "Facebook" },
+  //{ href: "https://instagram.com", Icon: AiFillInstagram, label: "Instagram" },
+  //{ href: "https://telegram.org", Icon: FaTelegramPlane, label: "Telegram" }
 ];
 
 export const Footer = () => {
 
   return (
-    <footer className="py-8 max-w-[1200px] mx-auto px-4">
+    <footer className="py-8 max-w-full mx-auto px-4 bg-black/90">
+      <div className="flex flex-col items-center justify-center text-center">
       <div className="mt-12 flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col">
         <p className="text-gray-200">
           © 2025. All rights reserved.
@@ -31,6 +32,10 @@ export const Footer = () => {
             </a>
           ))}
         </ul>
+      </div>
+        <p className="mt-4 text-gray-200">
+            Built with ❤️ by Emamul Arefin Islam
+        </p>
       </div>
     </footer>
   );
